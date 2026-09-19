@@ -103,7 +103,7 @@ jobs:
           fi
           app="${apps[0]}"
           executable=$(/usr/libexec/PlistBuddy -c 'Print :CFBundleExecutable' "$app/Info.plist")
-          /usr/bin/lipo -verify_arch arm64 "$app/$executable"
+          /usr/bin/lipo "$app/$executable" -verify_arch arm64
           mkdir -p "$RUNNER_TEMP/package/Payload"
           /usr/bin/ditto "$app" "$RUNNER_TEMP/package/Payload/$(basename "$app")"
           cd "$RUNNER_TEMP/package"
