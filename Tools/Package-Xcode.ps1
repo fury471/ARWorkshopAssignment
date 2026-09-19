@@ -8,6 +8,7 @@ param(
 )
 
 $ErrorActionPreference = 'Stop'
+[System.AppContext]::SetSwitch('Switch.System.IO.Compression.ZipFile.UseBackslash', $false)
 Add-Type -AssemblyName System.IO.Compression.FileSystem
 
 $sourcePath = (Resolve-Path -LiteralPath $ExportDirectory).Path.TrimEnd('\', '/')
