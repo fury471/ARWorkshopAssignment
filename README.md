@@ -8,14 +8,14 @@ and add the AR scripts only after installing their packages.
 
 ## Versions — fill from your actual setup
 
-- Windows:
+- Windows: Windows 11 pro for workstations 25H2
 - Unity Editor (full patch): 6000.3.24f1
-- AR Foundation (6.3.x):
-- Apple ARKit XR Plug-in (6.3.x):
-- Input System:
+- AR Foundation: 6.3.5
+- Apple ARKit XR Plug-in: 6.3.5
+- Input System: 1.20.0
 - Xcode used by the successful cloud run:
-- iPhone model / iOS:
-- Sideloadly:
+- iPhone model / iOS: iPhone 16 pro / iOS 27.0
+- Sideloadly: v0.60
 
 ## Scenes
 
@@ -32,7 +32,6 @@ Use CombinedLab as the only enabled scene for the final iOS build.
 
 Use a public GitHub repository. The supplied standard macOS runner has free
 compute for public repositories. Releases and their export assets are public.
-Share the source link directly with your supervisor; no invitation is needed.
 
 ## Build
 
@@ -47,7 +46,8 @@ Share the source link directly with your supervisor; no invitation is needed.
 
 | Date | Source commit | Export tag/hash | Actions run | Device test | Result |
 |---|---|---|---|---|---|
-| | | | | | |
+| 20/09/2026 | Preparation Commit b2ce29c | export-001 / FC72291DE603BF9A2B3D647C93029C8E920BC1276233F7B95B9C2E7B6A91BEC7 | https://github.com/fury471/ARWorkshopAssignment/actions/runs/35476208330 | Not performed | Compilation passed; IPA packaging failed because of incorrect `lipo` argument order. |
+| 20/09/2026 | Corrected lipo argument order in workflow commit 398d4b0. | export-001 / FC72291DE603BF9A2B3D647C93029C8E920BC1276233F7B95B9C2E7B6A91BEC7 | https://github.com/fury471/ARWorkshopAssignment/actions/runs/35476942944 | iPhone 16 Pro: installed and launched; test cube visible | Corrected `lipo` argument order; Unsigned IPA generated successfully. |
 
 ## Assignment evidence
 

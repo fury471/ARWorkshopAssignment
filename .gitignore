@@ -17,5 +17,7 @@
 *.p12
 *.p8
 *.mobileprovision
+*.htm
 xcode-export.zip
 .DS_Store
+

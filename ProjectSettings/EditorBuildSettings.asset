@@ -6,8 +6,13 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/_Assignment/Scenes/PipelineCheck.unity
-    guid: d0f5089a3ae74d4478d359f09b88d7fc
+    path: Assets/_Assignment/Scenes/CombinedLab.unity
+    guid: 03d90fe796c8b284ba670b7deafa47d3
   m_configObjects:
+    UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: ffe8726140d5ee74e9e257be14a67b5b, type: 2}
+    UnityEditor.XR.ARKit.ARKitSettings: {fileID: 11400000, guid: 58bb43a7fe404f44289b8e0d368b0c68, type: 2}
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
+    com.unity.xr.arfoundation.simulation_settings: {fileID: 11400000, guid: 5edd0dce79e529449bf53e904f5ae688, type: 2}
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: a0d46c36867c90842abeae993a356880, type: 2}
+    com.unity.xr.openxr.settings4: {fileID: 11400000, guid: eb9b486669054c546a90752d13d47698, type: 2}
   m_UseUCBPForAssetBundles: 0
