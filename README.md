@@ -48,6 +48,7 @@ compute for public repositories. Releases and their export assets are public.
 |---|---|---|---|---|---|
 | 20/09/2026 | Preparation Commit b2ce29c | export-001 / FC72291DE603BF9A2B3D647C93029C8E920BC1276233F7B95B9C2E7B6A91BEC7 | https://github.com/fury471/ARWorkshopAssignment/actions/runs/35476208330 | Not performed | Compilation passed; IPA packaging failed because of incorrect `lipo` argument order. |
 | 20/09/2026 | Corrected lipo argument order in workflow commit 398d4b0. | export-001 / FC72291DE603BF9A2B3D647C93029C8E920BC1276233F7B95B9C2E7B6A91BEC7 | https://github.com/fury471/ARWorkshopAssignment/actions/runs/35476942944 | iPhone 16 Pro: installed and launched; test cube visible | Corrected `lipo` argument order; Unsigned IPA generated successfully. |
+| 20/09/2026 | Add combined surface and marker AR assignment Commit 6d70928 | export-002 / 2B544BAB1F343E19540A6AA6B5E6BE6BEE4FF9EDA44BA89062EA14A8F5AEA07A | https://github.com/fury471/ARWorkshopAssignment/actions/runs/35516210058 | iPhone 16 Pro: installed through Sideloadly, replaced the previous test app, and launched successfully. | Passed: real camera feed displayed; surface detection and tap-to-place spheres worked; reference image detection displayed a rotating cube. |
 
 ## Assignment evidence
 
@@ -63,10 +64,8 @@ compute for public repositories. Releases and their export assets are public.
 
 SpinObjectOnMarker reproduces the supplied marker workshop's rotation code.
 TapToPlace adapts the supplied surface workshop with validation and mouse input.
-Other starter code and pipeline instructions were generated with AI assistance.
-Record your own edits and follow the course's disclosure requirements.
 
 ## Scope
 
 This assignment does not implement persistent locations, building alignment,
-two-floor navigation, or intelligent search. Those are later project stages.
+two-floor navigation, or intelligent search. 
