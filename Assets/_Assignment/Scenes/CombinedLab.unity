@@ -246,6 +246,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1 &682708141
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 682708142}
+  m_Layer: 0
+  m_Name: PlacedModel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &682708142
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 682708141}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1260387828
 GameObject:
   m_ObjectHideFlags: 0
@@ -755,7 +786,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a65c913d47f5db84197dac32a57d75d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TapToPlace
-  objectToPlace: {fileID: 7379642755180356907, guid: 9a3c5ac6b4ac7b749ba001054adc6c91, type: 3}
+  objectToPlace: {fileID: 5705780454170029140, guid: 85d694dc4faa5f847b1b504248723ff3, type: 3}
   raycastManager: {fileID: 1879000226}
 --- !u!114 &1879000229
 MonoBehaviour:
@@ -787,7 +818,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e1f712ee28caa44baeda851dc905ab2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MarkerContentController
-  contentPrefab: {fileID: 5630435667628595355, guid: 21ba5b8ee0eafa64cb3218162c19dd7e, type: 3}
+  contentPrefab: {fileID: 7757234780066732477, guid: c9ce72f7f70a6b2419905f58f58426e7, type: 3}
 --- !u!1 &1941548675
 GameObject:
   m_ObjectHideFlags: 0
@@ -842,3 +873,4 @@ SceneRoots:
   - {fileID: 1719125960}
   - {fileID: 1941548677}
   - {fileID: 1879000225}
+  - {fileID: 682708142}

@@ -52,20 +52,45 @@ compute for public repositories. Releases and their export assets are public.
 
 ## Assignment evidence
 
-- Surface detection and multiple tap placements:
-- Image recognition and cube rotation:
-- Video / screenshots:
-- Known limitations:
-- Last successful signature refresh:
-- Source link shared with supervisor:
-- Demonstration appointment:
+- Surface-based AR: Replaced the sphere with a textured apple prefab. Tap-to-place functionality tested in Unity XR Simulation.
+- Image-based AR: Replaced the cube with a music-box model and created materials in Unity. Adjusted its position relative to the reference image.
+- Audio behaviour: Configured music to play while the marker content is active, stop when tracking is lost, and restart when tracking returns.
+- Device verification: Updated apple and music-box version awaiting iPhone testing.
+- Video / screenshots: 
+- Known limitations: Placed apples are not saved between sessions. Placement accuracy depends on tracking quality. Music playback follows the reported tracking state, so stopping may not happen immediately when the image leaves the camera view.
 
 ## Provenance
 
-SpinObjectOnMarker reproduces the supplied marker workshop's rotation code.
-TapToPlace adapts the supplied surface workshop with validation and mouse input.
+- `TapToPlace` adapts the supplied surface-based workshop code with validation and Editor mouse input. The assigned prefab was changed from a sphere to an apple.
+- `SpinObjectOnMarker` reproduces the original marker workshop’s rotation code.
+- `MarkerContentController` is an AI-assisted addition that creates content attached to tracked images and controls its visibility using tracking state.
+- `MusicBoxAudio` is an AI-assisted addition that starts audio when the content is enabled and stops it when disabled.
+- The apple model and supplied texture images were downloaded online and configured as a Unity prefab.
+- The music-box model was downloaded online. Its materials were created manually in Unity.
+- AI assistance was used for implementation guidance, debugging, and the Windows-to-iPhone build pipeline.
 
-## Scope
+## Asset credits
 
-This assignment does not implement persistent locations, building alignment,
-two-floor navigation, or intelligent search. 
+### Apple
+
+- **Asset:** Apple
+- **Creator:** Krayton Gaming
+- **Source:** [Apple on Fab](https://www.fab.com/listings/1364a374-2dd0-43a7-b4d1-a6cda5ee09fc)
+- **Adaptations:** Configured the supplied textures in a Unity URP material, adjusted scale and placement alignment, and created the `PlacedApple` prefab.
+- **Licence:** [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/)
+
+### Music box
+
+- **Asset:** Music Box
+- **Source:** [Music Box on CGTrader](https://www.cgtrader.com/free-3d-models/household/other/music-box-c3ee10b7-d509-43ed-9d76-dc42f336c549)
+- **Creator:** SpiritStudio
+- **Adaptations:** Created silver, brass, plastic, and brown-base materials in Unity; adjusted marker alignment; and added tracking-controlled audio playback.
+- **licence:** To be confirmed, but it is free.
+
+### Music
+
+“Music Box Theme” by Kevin MacLeod (incompetech.com).
+
+- **Source:** [Music Box Theme](https://incompetech.com/music/royalty-free/index.html?isrc=USUAN1100417)
+- **Licence:** [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/)
+- **Use in this project:** Background music for the virtual music box, with playback controlled by marker tracking.
